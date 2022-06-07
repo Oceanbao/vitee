@@ -1,0 +1,17 @@
+node_modules
+.DS_Store
+dist
+dist
+*.scss
+*.css
+dist-ssr
+*.local
+node_modules/*
+
+# Ignore artifacts:
+build/
+coverage/
+
+vite-env.d.ts
+vite.config.ts
+jest.config.js
