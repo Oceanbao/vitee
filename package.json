@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "React Vite Template",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 8085 --host 0.0.0.0",
     "build": "tsc && vite build",
     "serve": "vite preview",
     "lint:fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore",
