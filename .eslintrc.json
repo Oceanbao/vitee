@@ -1,53 +1,45 @@
 {
   "root": true,
   "env": {
-      "browser": true,
-      "es6": true,
-      "es2021": true,
-      "jest": true
+    "browser": true,
+    "es6": true,
+    "es2021": true,
+    "jest": true
   },
   "globals": {
-      "Atomics": "readonly",
-      "SharedArrayBuffer": "readonly"
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-      "ecmaVersion": "latest",
-      "ecmaFeatures": {
-        "jsx": true
-      },
-      "sourceType": "module",
-      "project": ["./tsconfig.json"]
+    "ecmaVersion": "latest",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module",
+    "project": ["./tsconfig.json"]
   },
-  "plugins": [
-      "@typescript-eslint",
-      "react",
-      "react-hook",
-      "import",
-      "jest",
-      "prettier",
-      "simple-import-sort"
-  ],
+  "plugins": ["@typescript-eslint", "react", "react-hooks", "import", "jest", "prettier", "simple-import-sort"],
   "extends": [
-      "eslint:recommended",
-      "plugin:import/errors",
-      "plugin:@typescript-eslint/recommended",
-      "plugin:react/recommended",
-      "plugin:react-hooks/recommended",
-      "plugin:@typescript-eslint/recommended-requiring-type-checking",
-      "plugin:jest/recommended",
-      "prettier",
-      "plugin:prettier/recommended",
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:jest/recommended",
+    "prettier",
+    "plugin:prettier/recommended"
   ],
   "rules": {
     "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/strict-boolean-expressions": [
-          2,
-          {
-              "allowString" : false,
-              "allowNumber" : false
-          }
+      2,
+      {
+        "allowString": false,
+        "allowNumber": false
+      }
     ],
     "no-unused-vars": [
       "error",
@@ -57,21 +49,14 @@
       }
     ],
     "import/extensions": ["error", "never", { "svg": "always" }],
-    "linebreak-style": ["error", "windows"], // off
+    "linebreak-style": 0,
     "react/display-name": 0,
     "react/prop-types": 0,
     "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": "off",
     "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }]
   },
-  "ignorePatterns": [
-    "src/**/*.test.ts",
-    "test/",
-    "dist/",
-    "node_modules/",
-    "jest.config.js",
-    "tips/"
-  ],
+  "ignorePatterns": ["src/**/*.test.ts", "test/", "dist/", "node_modules/", "jest.config.js", "tips/"],
   "settings": {
     "react": {
       "version": "detect"
@@ -80,6 +65,6 @@
       "node": {
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
-    }        
+    }
   }
 }

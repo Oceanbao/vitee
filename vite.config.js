@@ -3,13 +3,13 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-    plugins: [react(), tsconfigPaths()],
-    server: {
-        watch: {
-            usePolling: true,
-        },
+  plugins: [react(), tsconfigPaths()],
+  server: {
+    watch: {
+      usePolling: true,
     },
-    build: {
-        sourcemap: true,
-    },
+  },
+  build: {
+    sourcemap: true,
+  },
 })
